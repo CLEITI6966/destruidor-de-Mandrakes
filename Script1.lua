@@ -111,8 +111,8 @@ end)
 
 task.spawn(function()
     while true do
-        humanoid.WalkSpeed = 0
-        humanoid.JumpPower = 0
+        humanoid.WalkSpeed = 16
+        humanoid.JumpPower = 50
         wait(0.2)
     end
 end)
