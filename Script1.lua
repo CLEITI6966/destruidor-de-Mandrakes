@@ -62,11 +62,6 @@ local function hideOtherPlayers()
     end
 end
 
-local function removeChat()
-    local chat = game:GetService("StarterGui")
-    chat:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
-end
-
 local function restartPlayer()
     local player = game.Players.LocalPlayer
     local character = player.Character or player.CharacterAdded:Wait()
@@ -133,5 +128,4 @@ end)
 corruptMap()
 createGlitchEffect()
 hideOtherPlayers()
-removeChat()
 restartPlayer()
